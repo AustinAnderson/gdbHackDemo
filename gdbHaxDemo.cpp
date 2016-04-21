@@ -2,6 +2,13 @@
 
 using namespace std;
 
+void rootAccessRoutine(bool allowAccess){
+    if(allowAccess){
+        cout<<"Root Access!"<<endl;
+    }
+}
+
+
 int main(){
     string password;
     cout<<"enter the password: ";
@@ -10,9 +17,7 @@ int main(){
     if(password=="CorrectPassword"){
         allowAccess=true;
     }
-    if(allowAccess){
-        cout<<"Root Access!"<<endl;
-    }
+    rootAccessRoutine(allowAccess);
     return 0;
 }
         
