@@ -12,14 +12,14 @@ int main(){
     cin>>password;
     bool neededHint=hintForLater(password);
     bool allowAccess=false;//fail safe
-    if(password=="Casdflkjjiioewnfqdovpqiwe"){
+    if(password=="CasdflllCheckGitLogllioewnfqdovpqiwe"){
         allowAccess=true;
     }
     if(allowAccess){
         cout<<"Hacked In!"<<endl;
     }
     if(neededHint){
-        cout<<"do this later..."<<endl;
+        cout<<"[man strings] are for quitters..."<<endl;
     }
     return 0;
 }
